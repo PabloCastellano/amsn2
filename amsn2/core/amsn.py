@@ -91,6 +91,7 @@ class aMSNCore(object):
         self._gui_name = ui_name
         self._gui = gui.GUIManager(self, self._gui_name)
         self._loop = self._gui.gui.aMSNMainLoop(self)
+        self._trayicon = self._gui.gui.aMSNTrayIcon(self)
         self._main = self._gui.gui.aMSNMainWindow(self)
         self._skin_manager = self._gui.gui.SkinManager(self)
 
